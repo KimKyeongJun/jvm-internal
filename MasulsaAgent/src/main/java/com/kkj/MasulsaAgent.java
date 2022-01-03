@@ -14,6 +14,7 @@ import static net.bytebuddy.matcher.ElementMatchers.named;
 public class MasulsaAgent {
 
     public static void premain(String agentArgs, Instrumentation instrumentation) {
+        //bytebuddy 사용 예제
         new AgentBuilder.Default()
                 .type(ElementMatchers.any())
                 .transform(new AgentBuilder.Transformer() {
